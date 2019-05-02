@@ -6,7 +6,6 @@ int
 float
 bool
 NoneType (Special and has one value, None)
-test file
 
 """
 
