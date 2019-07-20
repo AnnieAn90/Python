@@ -60,8 +60,8 @@ for i in range(0,month): # bring money back to today's value
     moneyPaidBank = moneyPaidBank + mortgage.moneyBackToToday(mortgage.fixedPayment,i,mortgage.monthlySavingRate)
 
 # Fees asscoiated with property maintainence, today
-monthlyCondoFee = 350 
-annualPropertyTax = 3500
+monthlyCondoFee = 350
+annualPropertyTax = 3784
 condoFee = month*monthlyCondoFee
 propertyTax = annualPropertyTax*years
 maintainanceFee = condoFee+propertyTax
