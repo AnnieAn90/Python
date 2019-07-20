@@ -41,7 +41,7 @@ CALCULATE THE MONTHLY PAYMENT
 """
 years = 25 # 25 years
 month = years*12 # payment month
-price = 322500 # house price
+price = 322500 # house price ， 322500
 downPaymentPercentage = 0.3 # downpayment percentage
 downPayment = downPaymentPercentage*price
 balance = price-downPayment # money you owe bank

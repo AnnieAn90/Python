@@ -76,7 +76,7 @@ HERE WE USE BISECTION METHOD TO CALCULATE THE DEISRED SALEPRICE
 """
 
 # USING THE BISECTION METHOD TO FIND THE NEUTRAL SALE PRICE OF THIS PROPERTY
-salePriceUp = 500000 # up bound ,future, 322500 (Buying price)
+salePriceUp = 1000000 # up bound ,future, 322500 (Buying price)
 salePriceLow = 200000 # low bound
 earnMoney = 0 # deisred earning from buying a property
 
