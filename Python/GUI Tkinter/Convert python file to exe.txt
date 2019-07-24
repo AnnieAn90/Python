@@ -1,0 +1,3 @@
+use the command:
+pip install pyinstaller
+pyinstaller --onefile -w TkinterIntroduction.py
