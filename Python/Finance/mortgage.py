@@ -42,7 +42,7 @@ CALCULATE THE MONTHLY PAYMENT
 years = 25 # 25 years
 month = years*12 # payment month
 price = 322500 # house price ， 322500
-downPaymentPercentage = 0.3 # downpayment percentage
+downPaymentPercentage = 0.35 # downpayment percentage
 downPayment = downPaymentPercentage*price
 balance = price-downPayment # money you owe bank
 
@@ -71,7 +71,7 @@ while abs(newBalance)> 0.001:
 # mid is out fixed payment solution, and print out our monthly payment
 mid = round(mid,2)
 fixedPayment = mid 
-# print("With a monthly Payment of",str(fixedPayment)+", you can pay off you loan in",str(years), "years!!!")
+print("With a monthly Payment of",str(fixedPayment)+", you can pay off you loan in",str(years), "years!!!")
 
 """
 CALCULATE HOW MUCH MONEY YOU ACTUALLY SPEND FOR BUY THIS PORPERTY
