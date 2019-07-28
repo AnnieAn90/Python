@@ -86,5 +86,5 @@ for i in range(0,month):
     moneyToday = moneyToday + moneyBackToToday(fixedPayment,i,monthlySavingRate)
 
 totalPropertyPayment =round(moneyToday+downPayment,2)
-# print("We will pay in total",totalPropertyPayment, "at today's value!!!" )
+print("We will pay in total",totalPropertyPayment, "at today's value!!!" )
     

@@ -28,7 +28,7 @@ def costOfBuyingAndSaling(salePrice,balanceOweBank,moneyPaidBank,maintainanceFee
 CALCULATE YOUR RENT COST OVER THE YEARS
 """
 monthlyRent = 1885 # include parking
-years = 4 # renting years
+years = 5 # renting years
 month = years*12
 
 # Set initial rent
