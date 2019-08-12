@@ -46,7 +46,7 @@ downPaymentPercentage = 0.35 # downpayment percentage
 downPayment = downPaymentPercentage*price
 balance = price-downPayment # money you owe bank
 
-loanRate = 0.03 # annual loan rate
+loanRate = 0.0289 # annual loan rate
 monthlyLoanRate = loanRate/12 # monthly loan rate
 
 # set lo/up bounds for finding the fixed monthly payment
