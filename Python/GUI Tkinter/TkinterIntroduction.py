@@ -7,8 +7,8 @@ This is a temporary script file.
 from tkinter import*
 """
 NOTE using this kind of import method we do not need the . sign
-or we can use "import tkinter". But with this we need to use tkinter.Tk().
-Another way is to use "import tkinter as gui", than use gui.TK(), alising! 
+or we can use "import tkinter". But with this we need to use tker.Tk().
+Another way is to use "import tkinter as gui", thanint use gui.TK(), alising! 
 """
 
 root = Tk() # just a blank window
