@@ -23,7 +23,7 @@ def costOfBuyingAndSaling(salePrice,balanceOweBank,moneyPaidBank,maintainanceFee
     buyCost = mortgage.downPayment + moneyPaidBank + maintainanceFee + buyingFee + carCost - saleGainToday
     return buyCost
 
-                     
+
 """
 CALCULATE YOUR RENT COST OVER THE YEARS
 """
@@ -39,6 +39,7 @@ for i in range(0,month):
 
 print("We will spend",round(rentCost,2),"at today's money value for renting in",years,"years!!!")
 
+
 """
 CALCUALTE THE COST OF BUYING AND SELLING A PROPERTY
 """
@@ -51,8 +52,11 @@ monthGasMoney = milagePerDay*daysPerMonth*moneyPerKm # gas money per month
 carCost = annualParking*years + monthGasMoney*12*years # money assoicated with cars (years), today
 # print("We will spend",carCost,"in parking and gas with buying a condo!!!" )
 
+# Deed transfer tax
+deedTransferTaxRate = 0.015
+
 # Fees associated with buying a property
-buyingFee = 2000 # lawyer and inspection fee in buying the property, today
+buyingFee = 2000 + mortgage.price*deedTransferTaxRate# lawyer and inspection fee in buying the property, today + deed transfer tax
 
 # Fees associated with the fixed payment to bank over the years
 moneyPaidBank = 0 # accumulated fixed payment to bank
@@ -60,11 +64,13 @@ for i in range(0,month): # bring money back to today's value
     moneyPaidBank = moneyPaidBank + mortgage.moneyBackToToday(mortgage.fixedPayment,i,mortgage.monthlySavingRate)
 
 # Fees asscoiated with property maintainence, today
+mortgageInsurance = 30
+homeInsurance = 30
 monthlyCondoFee = 350
 annualPropertyTax = 3784
 condoFee = month*monthlyCondoFee
 propertyTax = annualPropertyTax*years
-maintainanceFee = condoFee+propertyTax
+maintainanceFee = condoFee+propertyTax + mortgageInsurance*month + homeInsurance*month
 
 # Remaining bank balance
 balanceOweBank = mortgage.remainingBalance(mortgage.balance,mortgage.fixedPayment,mortgage.monthlyLoanRate,month) # money owe bank, future
@@ -74,7 +80,6 @@ balanceOweBank = mortgage.remainingBalance(mortgage.balance,mortgage.fixedPaymen
 """
 HERE WE USE BISECTION METHOD TO CALCULATE THE DEISRED SALEPRICE
 """
-
 # USING THE BISECTION METHOD TO FIND THE NEUTRAL SALE PRICE OF THIS PROPERTY
 salePriceUp = 1000000 # up bound ,future, 322500 (Buying price)
 salePriceLow = 200000 # low bound
