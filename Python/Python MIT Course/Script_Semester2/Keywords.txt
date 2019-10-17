@@ -1,0 +1,2 @@
+1. NumPy (Numerical Python): NumPy is the fundamental package for scientific computing with Python. It contains among other things.
+e.g. import NumPy as np 
