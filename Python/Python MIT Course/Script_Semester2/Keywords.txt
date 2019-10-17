@@ -1,2 +1,18 @@
 1. NumPy (Numerical Python): NumPy is the fundamental package for scientific computing with Python. It contains among other things.
 e.g. import NumPy as np 
+
+2. matplotlib: Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy (data visualization)
+
+3. pyplot: is a Matplotlib module which provides a MATLAB-lik interface. 
+e.g. 
+>>> import matplotlib.pyplot as plt
+>>> import numpy as np
+>>> a = np.linspace(0, 10, 100)
+>>> b = np.exp(-a)
+>>> plt.plot(a, b)
+>>> plt.show()
+
+4. PyLab: is actually embedded inside Matplotlib and provides a Matlab-like experience for the user. It imports portions of Matplotlib and NumPy.
+It is not recommended anymore as it doesn't nurture understanding of Python itself, thus leaving you in a limited environment
+
+5. SciPy (Scientific Python):  adds substantial capabilities to NumPy. For Matlab users, it's very much like many of the core toolboxes.  If you import scipy as sp, you have also by default imported the core capabilities of NumPy, making importing NumPy almost redundant.
