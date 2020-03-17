@@ -47,7 +47,7 @@ CALCUALTE THE COST OF BUYING AND SELLING A PROPERTY
 annualParking = 356.57 # parking fee 
 moneyPerKm = 0.15 # gas money per Km
 milagePerDay = 18 # 18 Km per day
-daysPerMonth = 25 # drive 25 days
+daysPerMonth = 30 # drive 25 days
 monthGasMoney = milagePerDay*daysPerMonth*moneyPerKm # gas money per month
 carCost = annualParking*years + monthGasMoney*12*years # money assoicated with cars (years), today
 # print("We will spend",carCost,"in parking and gas with buying a condo!!!" )
