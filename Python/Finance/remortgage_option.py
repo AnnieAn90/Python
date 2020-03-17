@@ -32,7 +32,7 @@ downPaymentPercentage = 0.35 # downpayment percentage
 loanRate = 0.0289 # annual loan rate
 month = years*12
 downPayment = price*downPaymentPercentage
-savingRate = 0.02 # annual saving interest rate
+savingRate = 0.024 # annual saving interest rate，or equivalently the inflation rate
 monthlySavingRate = savingRate/12 # minimum monthly interest you can get
    
 # recall the moortgage calculation function
@@ -59,7 +59,7 @@ new_fiveYearPayment = currentValue(new_fixedPayment,term,monthlySavingRate)
 
 offset = fiveYearPayment-new_fiveYearPayment-mortgagePenalty
 
-while abs(offset)> 0.2:
+while abs(offset)> 0.5:
     if offset > 0:
         lobound = mid
     else:
