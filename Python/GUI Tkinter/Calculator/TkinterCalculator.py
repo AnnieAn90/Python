@@ -37,11 +37,12 @@ def btn_clear():
 # 3. Third and the final function is button equal ("=") 'btn_equal' function which will calculate the expression present in input field. For example: User clicks button 2, + and 3 then clicks "=" will result in an output 5.
 def btn_equal():
     global expression
-    result = str(eval(expression)) # 'eval' function is used for evaluating the string expressions directly
+    result = str(eval(expression)) # 'eval' function is used for evaluating the string expressions directly (i.e eval("2+3") gives you 5)
     # you can also implement your own function to evalute the expression istead of 'eval' function
     input_text.set(result)
     expression = ""
 
+# empty expression
 expression = ""
 # In order to get the instance of the input field 'StringVar()' is used
 input_text = StringVar()
@@ -65,6 +66,7 @@ btns_frame.pack()
 
 
 # The first row will comprise of the buttons 'Clear (C)' and 'Divide (/)'
+# Note lamba presents a anonymous function, it is required here!!!
 clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_clear()).grid(row = 0, column = 0, columnspan = 3, padx = 1, pady = 1)
 divide = Button(btns_frame, text = "/", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_click("/")).grid(row = 0, column = 3, padx = 1, pady = 1)
 
