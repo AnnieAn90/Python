@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from tkinter import *
-import tkinter.messagebox
-
+from PIL import ImageTk,Image
 """
 NOTE using this kind of import method we do not need the . sign
 or we can use "import tkinter". But with this we need to use tkiner.Tk().
@@ -16,10 +15,21 @@ root.title("Images and Icons")
 #root.geometry("500x300") # dimension of root window
 
 # **** icon ****
-root.iconbitmap()
+# we need ico files
+root.iconbitmap('pic2.ico') # this is for icon
 
-#photo = PhotoImage(file="pic1.jpg")
+# **** images ****
+# only works for png files
+my_img = ImageTk.PhotoImage(Image.open("pic1.png"))
+my_label = Label(image=my_img)
+my_label.pack()
+#photo = PhotoImage(file="pic1.png")
 #label = Label(root,image=photo)
 #label.pack()
+
+# **** exit button ****
+button_quit = Button(root,text="Exit Program",command = root.quit)
+button_quit.pack(side=TOP)
+
 
 root.mainloop()
