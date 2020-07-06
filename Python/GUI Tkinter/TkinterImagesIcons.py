@@ -19,7 +19,7 @@ root.title("Images and Icons")
 root.iconbitmap('pic2.ico') # this is for icon
 
 # **** images ****
-# only works for png files
+# only works for png files if we do not import ImageTk (small case k)
 my_img = ImageTk.PhotoImage(Image.open("pic1.png"))
 my_label = Label(image=my_img)
 my_label.pack()
@@ -28,8 +28,7 @@ my_label.pack()
 #label.pack()
 
 # **** exit button ****
-button_quit = Button(root,text="Exit Program",command = root.quit)
-button_quit.pack(side=TOP)
-
+button_quit = Button(root,text="Exit Program",command = root.destroy) # here we need to use root.destroy instead of root.quit
+button_quit.pack()
 
 root.mainloop()
