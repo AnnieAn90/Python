@@ -14,6 +14,8 @@ Include images and icons
 root =Tk() 
 #root.geometry("500x300") # dimension of root window
 
-photo = PhotoImage(file="")
+photo = PhotoImage(file="pic1.jpg")
+label = Label(root,image=photo)
+label.pack()
 
 root.mainloop()
