@@ -28,7 +28,7 @@ for i in range(1,sets+1): # note range(1,3) gievs 1,2; range(2) gives 0,1
         if j <= duration:
             print("Hold on for "+ str(j))
         else:
-            print("Rest for "+ str(j-5))  
+            print("Rest for "+ str(j-duration))  
         time.sleep(1)
         
     
