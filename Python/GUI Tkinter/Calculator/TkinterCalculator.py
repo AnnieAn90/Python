@@ -67,7 +67,8 @@ btns_frame.pack()
 
 # The first row will comprise of the buttons 'Clear (C)' and 'Divide (/)'
 # Note lamba presents a anonymous function, it is required here!!!
-clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_clear()).grid(row = 0, column = 0, columnspan = 3, padx = 1, pady = 1)
+# more reference check here: https://stackoverflow.com/questions/50109515/python-not-understanding-why-lambda-is-required-in-gui-command-to-call-funct
+clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command =  lambda:btn_clear()).grid(row = 0, column = 0, columnspan = 3, padx = 1, pady = 1)
 divide = Button(btns_frame, text = "/", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_click("/")).grid(row = 0, column = 3, padx = 1, pady = 1)
 
 
