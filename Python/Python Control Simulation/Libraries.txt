@@ -1,3 +1,4 @@
 1. SciPy: (e.g. integrate function)
 2. NumPy
 3. Python Systems Control library: (e.g. lqr controller; https://python-control.readthedocs.io/en/0.9.0/intro.html#overview-of-the-toolbox)
+Note: We can bascially run any MatLab simulations in Python; In addition, Python has really good MATLAB-alike syntaxes
