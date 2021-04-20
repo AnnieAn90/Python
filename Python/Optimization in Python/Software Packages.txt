@@ -1,0 +1,6 @@
+1. https://scaron.info/blog/quadratic-programming-in-python.html (Summary of 6 packages)
+
+Python using a number of available solvers: CVXOPT, CVXPY, Gurobi, MOSEK, qpOASES and quadprog.
+
+Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually is faster!)
+Symbolic: CVXPY/Gurobi/MOSEK (symbolic variables)
