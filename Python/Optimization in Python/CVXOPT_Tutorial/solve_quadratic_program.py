@@ -9,10 +9,17 @@ from cvxopt import matrix, solvers
 
 start_time = time.time() # start time
 
-Q = 2*matrix([ [2, .5], [.5, 1] ])
+# Q = 2*matrix([ [2, .5], [.5, 1] ])
+# p = matrix([1.0, 1.0])
+# G = matrix([[-1.0,0.0],[0.0,-1.0]])
+# h = matrix([0.0,0.0])
+# A = matrix([1.0, 1.0], (1,2))
+# b = matrix(1.0)
+
+Q = matrix([ [4, 1], [1, 2.0] ])
 p = matrix([1.0, 1.0])
-G = matrix([[-1.0,0.0],[0.0,-1.0]])
-h = matrix([0.0,0.0])
+G = matrix([[2.0,0.0],[0.0, 0.3]])
+h = matrix([0.7,0.7])
 A = matrix([1.0, 1.0], (1,2))
 b = matrix(1.0)
 
