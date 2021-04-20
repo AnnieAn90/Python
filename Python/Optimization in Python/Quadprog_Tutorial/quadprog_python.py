@@ -21,7 +21,9 @@ def quadprog_solve_qp(P, q, G=None, h=None, A=None, b=None):
         qp_C = -G.T
         qp_b = -h
         meq = 0
-    return quadprog.solve_qp(qp_G, qp_a, qp_C, qp_b, meq)[0]
+    # quadprog.solve returns a tuple, to access the element inside it we use slice tuple.
+    # https://github.com/quadprog/quadprog/blob/master/quadprog/quadprog.pyx （fore more info）
+    return quadprog.solve_qp(qp_G, qp_a, qp_C, qp_b, meq)[0:2]
 
 
 # Generate problem data (need to use float number)
@@ -32,10 +34,10 @@ h = numpy.array([0.7, 0.7])
 A = numpy.array([[1., 1.]])
 b = numpy.array([1.])
 
-# https://github.com/quadprog/quadprog/blob/master/quadprog/quadprog.pyx （fore more info）
-# x is the optimizal solution
-x = quadprog_solve_qp(P, q, G, h, A, b)
+# x is the optimizal solution, fval is the final value
+x,fval = quadprog_solve_qp(P, q, G, h, A, b)
 # x = quadprog_solve_qp(P, q, G, h, None, None)
 
 print(x)
+print(fval)
 print("--- %s seconds ---" % (time.time() - start_time)) # print out the exectuion time
