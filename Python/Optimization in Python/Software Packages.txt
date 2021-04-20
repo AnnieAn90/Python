@@ -4,3 +4,5 @@ Python using a number of available solvers: CVXOPT, CVXPY, Gurobi, MOSEK, qpOASE
 
 Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually is faster!)
 Symbolic: CVXPY/Gurobi/MOSEK (symbolic variables)
+
+Optimization Speed: quadprog > CVXOPT > CVXPY
