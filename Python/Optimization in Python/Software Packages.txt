@@ -2,7 +2,7 @@
 
 Python using a number of available solvers: CVXOPT, CVXPY, Gurobi, MOSEK, qpOASES and quadprog.
 
-Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually is faster!)
+Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually faster!)
 Symbolic: CVXPY/Gurobi/MOSEK (symbolic variables)
 
 Optimization Speed: quadprog > CVXOPT > CVXPY
