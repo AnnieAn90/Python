@@ -1,0 +1,44 @@
+1. https://www.cvxpy.org/examples/basic/quadratic_program.html (reference)
+2. in command line (change to current dir): python3 "name" 
+
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+# Import packages.
+import cvxpy as cp
+import numpy as np
+import time 
+
+start_time = time.time() # start time
+
+# Generate a random non-trivial quadratic program.
+m = 15
+n = 10
+p = 5
+np.random.seed(1)
+P = np.random.randn(n, n)
+P = P.T @ P
+q = np.random.randn(n)
+G = np.random.randn(m, n)
+h = G @ np.random.randn(n)
+A = np.random.randn(p, n)
+b = np.random.randn(p)
+
+# Define and solve the CVXPY problem.
+x = cp.Variable(n)
+prob = cp.Problem(cp.Minimize((1/2)*cp.quad_form(x, P) + q.T @ x),
+                 [G @ x <= h,
+                  A @ x == b])
+prob.solve()
+
+# Print result.
+print("\nThe optimal value is", prob.value)
+print("A solution x is")
+print(x.value)
+print("A dual solution corresponding to the inequality constraints is")
+print(prob.constraints[0].dual_value)
+print("--- %s seconds ---" % (time.time() - start_time)) # print out the exectuion time
