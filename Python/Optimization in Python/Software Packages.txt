@@ -1,6 +1,8 @@
 1. https://scaron.info/blog/quadratic-programming-in-python.html (Summary of 6 packages)
 
-Python using a number of available solvers: CVXOPT, CVXPY, Gurobi, MOSEK, qpOASES and quadprog.
+2. Python using a number of available solvers: CVXOPT, CVXPY, Gurobi, MOSEK, qpOASES and quadprog.
+
+3. CasAdi is another symbolic optimization toolbox which also python support.
 
 Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually faster!)
 Symbolic: CVXPY/Gurobi/MOSEK (symbolic variables)
