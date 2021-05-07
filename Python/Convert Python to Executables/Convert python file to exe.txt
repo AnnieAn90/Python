@@ -1,0 +1,17 @@
+//use the command:
+//shift+right click to open a window power shell in the current directory
+
+// (install pyinstaller if not installed!)
+pip install pyinstaller 
+pyinstaller --onefile -w TkinterIntroduction.py 
+
+//For the great majority of programs, this can be done with one short command, 
+pyinstaller myscript.py
+
+//or with a few added options, for example a windowed application as a single-file executable,
+pyinstaller --onefile --windowed myscript.py
+
+// https://datatofish.com/executable-pyinstaller/
+// You distribute the bundle as a folder or file to other people, and they can execute your program. 
+// To your users, the app is self-contained. They do not need to install any particular version of Python or any modules. 
+// They do not need to have Python installed at all.
