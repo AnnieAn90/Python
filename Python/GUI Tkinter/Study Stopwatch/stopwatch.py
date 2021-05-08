@@ -33,4 +33,4 @@ def stopwatch(seconds):
         # On my machine, it ran the loop 2605326 times in 20 seconds.
         # Obviously it won't run it more than 20 times if you use time.sleep(1)
 
-stopwatch(60)
+stopwatch(10)
