@@ -1,1 +1,2 @@
-pyhton inplementation is way faster than both matlab implementation and matlab quadprog function
+python inplementation is way faster than both matlab implementation and matlab quadprog function
+Note: for solve qp problems, the python implementation of CasDAi and quadprog in python provides comparable speed!!!
