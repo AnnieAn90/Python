@@ -8,8 +8,6 @@ import time
 import numpy
 import quadprog
 
-start_time = time.time() # start time
-
 def quadprog_solve_qp(P, q, G=None, h=None, A=None, b=None):
     qp_G = .5 * (P + P.T)   # make sure P is symmetric
     qp_a = -q
@@ -29,13 +27,14 @@ def quadprog_solve_qp(P, q, G=None, h=None, A=None, b=None):
 # Generate problem data (need to use float number)
 P = numpy.array([[4., 1.], [1., 2.]])
 q = numpy.array([1., 1.])
-G = numpy.array([[2., 0.], [0., 3]])
+G = numpy.array([[2., 0.], [0., 0.3]])
 h = numpy.array([0.7, 0.7])
 A = numpy.array([[1., 1.]])
 b = numpy.array([1.])
 
 # x is the optimizal solution, fval is the final value
 try: 
+    start_time = time.time() # start time
     x,fval = quadprog_solve_qp(P, q, G, h, A, b)
     print(x)
     print(fval)
