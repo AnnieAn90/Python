@@ -1,0 +1,2 @@
+// Check the syntax (input/output/etc..)
+https://github.com/quadprog/quadprog/blob/master/quadprog/quadprog.pyx
