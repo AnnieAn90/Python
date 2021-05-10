@@ -5,6 +5,10 @@
 3. CasAdi is another symbolic optimization toolbox which also python support.
 
 Numerical: CVXOPT/qpOASES/quadprog (Matrix type) (Usually faster!)
-Symbolic: CVXPY/Gurobi/MOSEK (symbolic variables)
+Symbolic: CVXPY/Gurobi/MOSEK/CasADi/ACADOS(symbolic variables)
 
 Optimization Speed: quadprog > CVXOPT > CVXPY
+
+We can use ACADOS/CasADi with high level language (MATLAB and Python) to formulate the MPC/QP problems
+then we can generate c-code from MATLAB/Python
+then wrap this standalone C code in embeded systems or in c++ in ROS!
