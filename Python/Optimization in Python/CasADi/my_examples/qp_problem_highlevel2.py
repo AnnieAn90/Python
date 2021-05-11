@@ -7,17 +7,21 @@ Created on Sun May  9 12:17:26 2021
 
 from casadi import *
 import time
+import numpy
 
 
 # Symbols/expressions
 x = MX.sym('x')
 y = MX.sym('y')
-f = 2*x**2+y**2+x*y+x+y
+z = MX.sym('z')
+
+# formulate cost function
+f = (x + 2*y-3)**2 + (3*y-8*x+2*z-2)**2+(y+z-3)**2
 # g = x+y-10
-g = vertcat(x+y-1, 1-x-y,0.7-2*x,0.7-0.3*y)
+g = vertcat(3-x-2*y-z,2-2*x-z,-2+x-2*y+z)
 
 qp = {}                 # NLP declaration
-qp['x']= vertcat(x,y) # decision vars
+qp['x']= vertcat(x,y,z) # decision vars
 qp['f'] = f             # objective
 qp['g'] = g             # constraints
 
