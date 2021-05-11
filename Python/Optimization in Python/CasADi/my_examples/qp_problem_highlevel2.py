@@ -25,6 +25,7 @@ qp['g'] = g             # constraints
 F = qpsol('F','qpoases',qp);
 
 start_time = time.time() # start time
+# lbg = lower bound of g; ubg = upper bound of g; lbx; ubx are defined in a similar way
 # Solve the problem using a guess
 r = F(lbg=0)
 
