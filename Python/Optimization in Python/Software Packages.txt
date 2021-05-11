@@ -16,4 +16,5 @@ then wrap this standalone C code in embeded systems or in c++ in ROS!
 For the same example shown in the quadprog comparison website: 
 Matlab (quadprog): 130 ms
 Python (quadprog): 0.5 ms
-Matlab (Casadi): 
+Matlab (Casadi): 60 ms
+Python (Casadi):
