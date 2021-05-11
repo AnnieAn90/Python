@@ -12,3 +12,8 @@ Optimization Speed: quadprog > CVXOPT > CVXPY
 We can use ACADOS/CasADi with high level language (MATLAB and Python) to formulate the MPC/QP problems
 then we can generate c-code from MATLAB/Python
 then wrap this standalone C code in embeded systems or in c++ in ROS!
+
+For the same example shown in the quadprog comparison website: 
+Matlab (quadprog): 130 ms
+Python (quadprog): 0.5 ms
+Matlab (Casadi): 
