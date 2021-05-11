@@ -17,4 +17,5 @@ For the same example shown in the quadprog comparison website:
 Matlab (quadprog): 130 ms
 Python (quadprog): 0.5 ms
 Matlab (Casadi): 60 ms
-Python (Casadi):
+Python (Casadi): 0.5 ms 
+Havent tested Casadi in c++ yet; it seems that quadprog python is sufficient in our applications.
