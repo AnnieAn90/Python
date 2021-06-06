@@ -1,0 +1,4 @@
+1. Mathematics : https://people.math.sc.edu/howard/Classes/
+2. Francisco Javier Blanco-Silva (key Person)
+3. Francisco J. Blanco-Silva. "Mastering Scipy"
+4. Francisco J. Blanco-Silva. "Learning Scipy for Numerical and Scientific Computing"
