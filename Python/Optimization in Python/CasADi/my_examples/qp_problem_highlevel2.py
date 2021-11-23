@@ -16,7 +16,7 @@ y = MX.sym('y')
 z = MX.sym('z')
 
 # formulate cost function
-f = (x + 2*y-3)**2 + (3*y-8*x+2*z-2)**2+(y+z-3)**2
+f = (x + 2*y-3)**2 + (3*y-8*x+2*z-2)**2 + (y+z-3)**2
 # g = x+y-10
 g = vertcat(3-x-2*y-z,2-2*x-z,-2+x-2*y+z)
 
