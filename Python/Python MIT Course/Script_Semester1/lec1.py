@@ -10,7 +10,7 @@ NoneType (Special and has one value, None)
 """
 
 # CAN USE type() TO SEE THE TYPE OF AN OBJECT: e.g. type(5)
-
+1
 # CAN CONVERT OBJECT OF ONE TYPE TO ANOTHER: e.g. float(3), int(3.9)
 
 # PRINTING TO CONSOLE: e.g. print(3+2) (NO OUTPUT BECAUSE NO VALUE RETURNED)
