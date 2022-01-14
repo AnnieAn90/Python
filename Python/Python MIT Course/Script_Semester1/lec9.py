@@ -78,7 +78,7 @@ class fraction(object):
     def __str__(self):
         return str(self.numer)+'/'+str(self.denom)
     # getters, but why we use them? can be just directly use self.numer? 
-    # The reason is that we donot want to directly manipulator the attributes associated with 
+    # The reason is that we donot want to directly manipulate the attributes associated with 
     # those instances
     def getNumer(self):
         return self.numer
