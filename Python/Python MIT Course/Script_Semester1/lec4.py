@@ -85,7 +85,7 @@ printName(lastName = 'Huang',firstName = 'Zipeng', reverse = False)
 
 """
 WE CAN ALSO SPECIFY THAT SOME ARGUMENTS HAVE DEFAULT VALUES, SO IF NO VALUE
-SUPPLIED, JUST USE THAT VALUE
+SUPPLIED, JUST USE THAT VALUE （Default value）
 """
 def printName(firstName,lastName,reverse = False):
     if reverse:
@@ -159,7 +159,7 @@ def Towers(n,fr,to,spare):
         Towers(1,fr,to,spare) # move the bottom to the direed disc
         Towers(n-1,spare,to,fr) # move the n-1 back to the deisred disc 
 
-print(Towers(2,'P1','P2','P3'))
+print(Towers(3,'P1','P2','P3'))
 
 
 # RECURSION WITH MULTIPLE BASE CASES
