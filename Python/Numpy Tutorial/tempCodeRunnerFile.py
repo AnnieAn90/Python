@@ -1,10 +1,27 @@
-a = np.array([1, 2, 3])   # Create a rank 1 array
-print(type(a))            # Prints "<class 'numpy.ndarray'>"
-print(a.shape)            # Prints "(3,)"
-print(a[0], a[1], a[2])   # Prints "1 2 3"
-a[0] = 5                  # Change an element of the array
-print(a)                  # Prints "[5, 2, 3]"
+from PIL import Image 
+import numpy as np
+import matplotlib.pyplot as plt
 
-b = np.array([[1,2,3],[4,5,6]])    # Create a rank 2 array
-print(b.shape)                     # Prints "(2, 3)"
-print(b[0, 0], b[0, 1], b[1, 0])   # Prints "1 2 4"
+# Read an JPEG image into a numpy array
+image = Image.open("cat.jpg")
+width, height = image.size
+image.show()
+
+new_size = (int(width/2),int(height/2))
+
+resized_image = image.resize(new_size)
+new_width, new_height = resized_image.size
+resized_image.show()
+
+# Show the original image
+plt.subplot(1, 2, 1)
+plt.imshow(image)
+
+# Show the tinted image
+plt.subplot(1, 2, 2)
+
+# A slight gotcha with imshow is that it might give strange results
+# if presented with data that is not uint8. To work around this, we
+# explicitly cast the image to uint8 before displaying it.
+plt.imshow(resized_image)
+plt.show()
