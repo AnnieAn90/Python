@@ -118,9 +118,9 @@ L.reverse() # mutates L = [9,6,3,0]
 # range returns sth that behaves like a tuple! doesn't generate elements at once,
 # rather it generates the first element, and provides and iteration method by which subsequent
 # elements can be generated
-range(5) # equivalent to tuple [0,1,2,3,4]
-range(2,6) # equivalent to [2,3,4,5]
-range(5,2,-1) # equivalent to [5,4,3]
+range(5) # equivalent to tuple (0,1,2,3,4)
+range(2,6) # equivalent to (2,3,4,5)
+range(5,2,-1) # equivalent to (5,4,3)
 for var in range (5):
     # expression
 for var in (0,1,2,3,4):

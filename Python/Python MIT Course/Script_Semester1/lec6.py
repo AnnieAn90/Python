@@ -78,7 +78,7 @@ def lyrics_to_frequencies(lyrics):
 # 2. return a tuple(list,int) for (words_list,highest_freq)
 def most_common_words(freqs): # freqs is a dictionary
     values = freqs.values() # all ints， note it is a special type not a list
-    if vlaues: # find the maxium is values is not empty
+    if values: # find the maxium is values is not empty
         best = max(values)
     else:
          best = 0
@@ -121,7 +121,7 @@ GLOBAL VARIABLES/ TRACKING EFFICIENCY
 # TWO BASE CASES, CALL ITSELF TWICE, INEFFICIENT
 def fib(n):
     global numFibCalls # global variable, we can access outside of the function
-    numFibcalls += 1
+    numFibCalls += 1
     if n == 1:
         return 1
     if n == 2:
@@ -133,7 +133,7 @@ def fib(n):
 # USING A DICTONARY TO HOLD ON THE VALUES I HAVE ALREADY CALCULATED
 def fib_efficient(n,d):
     global numFibCalls # accessible from outside scope of function
-    numFibcalls += 1
+    numFibCalls += 1
     if n in d:
         return d[n]
     else:
