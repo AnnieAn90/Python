@@ -154,8 +154,6 @@ class Professor(MITPerson):
 faculty = Professor('Doctor Arrogant','six')
 
 
-
-
 """
 EXAMPLE CLASS: GRADEBOOK
 create class that includes instance of other classes within in
