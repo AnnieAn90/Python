@@ -98,7 +98,6 @@ print('')
 testMaxVal(foods, 750)
 
 import random
-
 def buildLargeMenu(numItems, maxVal, maxCost):
     items = []
     for i in range(numItems):
