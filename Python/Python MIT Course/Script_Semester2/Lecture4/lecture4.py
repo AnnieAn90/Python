@@ -41,7 +41,7 @@ def sameDate(numPeople, numSame):
 #    possibleDates = 4*list(range(0, 57)) + [58]\
 #                    + 4*list(range(59, 366))\
 #                    + 4*list(range(180, 270))
-    birthdays = [0]*366
+    birthdays = [0]*366 # a list
     for p in range(numPeople):
         birthDate = random.choice(possibleDates)
         birthdays[birthDate] += 1

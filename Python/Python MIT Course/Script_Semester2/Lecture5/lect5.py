@@ -129,9 +129,9 @@ def simAll(drunkKinds, walkLengths, numTrials):
     for dClass in drunkKinds:
         drunkTest(walkLengths, numTrials, dClass)
         
-#random.seed(0)
-#simAll((UsualDrunk, MasochistDrunk),
-#       (1000, 10000), 100)
+random.seed(0)
+simAll((UsualDrunk, MasochistDrunk),
+       (1000, 10000), 100)
 #        
 #xVals = [1, 2, 3, 4]
 #yVals1 = [1, 2, 3, 4]
