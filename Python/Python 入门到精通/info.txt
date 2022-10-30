@@ -1,0 +1,5 @@
+Very good resource for Python Programming
+请使用百度网盘下载图书学习资源。
+链接：https://pan.baidu.com/s/1Dke-0y3H9jIBPZnQUPeF6w 
+提取码：pyth 
+（把上面的链接复制到电脑浏览器地址栏中，即可下载本书视频、源码、背记手册等资源。）
