@@ -81,11 +81,12 @@ If this file imported by other file, its own name "mortgage" is assigned to __na
 """
 if __name__ == '__main__':
     years = 25 # 25 years
-    price = 322500 # house price ， 322500
-    downPaymentPercentage = 0.35 # downpayment percentage
-    loanRate = 0.0289 # annual loan rate
+    price = 965000 # house price ， 322500
+    downPaymentPercentage = 0.414 # downpayment percentage
+    loanRate = 0.065 # annual loan rate
     month = years*12
-    downPayment = price*downPaymentPercentage
+    # downPayment = price*downPaymentPercentage
+    downPayment = 400000 
     
     # recall the moortgage calculation function
     fixedPayment = mortgageCalculator(years,price,downPaymentPercentage,loanRate)
